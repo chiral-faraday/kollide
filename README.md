@@ -1,90 +1,119 @@
-# widget
-The example of how to build the Theia-based applications with the widget.
+# README
+Custom IDE built on Theia. 
+
+## Status 
+The project is currently work in progress. 
+
+## Syphor
+The `syphor` extension demonstrates how to implement a simple extension with a basic Theia backend and frontend. At the frontend,
+there is a simple widget that takes arbitrary Cypher queries which a dedicated backend service forwards to a local memgraph server.
+It also demonstrates how to use the settings/preferences UI, how to register command contributions and menu contributions.
 
 ## Getting started
 
 Please install all necessary [prerequisites](https://github.com/eclipse-theia/theia/blob/master/doc/Developing.md#prerequisites).
+Run the following at the monorepo root:
 
-## Running the browser example
+```sh
+npm install
+```
 
-    npm run build:browser
-    npm run start:browser
+On the first run, also use Lerna to run the `prepare` scripts:
 
-*or:*
+```sh
+npm run prepare
+```
 
-    npm run build:browser
-    cd browser-app
-    npm start
+## Building app and extensions
 
-*or:* launch `Start Browser Backend` configuration from VS code.
+*Build the relevant extension*
 
-Open http://localhost:3000 in the browser.
+```sh
+npm run build:syphor
+```
 
-## Running the Electron example
+*Build the browser* 
 
-    npm run build:electron
-    npm run start:electron
+```sh
+npm run build:browser
+```
 
-*or:*
+*Start the application*
 
-    npm run build:electron
-    cd electron-app
-    npm start
+```sh
+npm run start:browser
+```
 
-*or:* launch `Start Electron Backend` configuration from VS code.
-
+*Access the application*
+Navigate to: `localhost:3000`
 
 ## Running the tests
 
-    npm test
+```sh
+  npm test
+```
 
 *or* run the tests of a specific package with
 
-    cd widget
+```sh
+    cd syphor
     npm test
-
+```
 
 ## Developing with the browser example
 
 Start watching all packages, including `browser-app`, of your application with
 
-    npm run watch:browser
+```sh
+  npm run watch:browser
+```
 
 *or* watch only specific packages with
 
-    cd widget
-    npm run watch
+```sh
+  cd widget
+  npm run watch
+```
 
 and the browser example.
 
-    cd browser-app
-    npm run watch
+```sh
+  cd browser-app
+  npm run watch
+```
 
-Run the example as [described above](#Running-the-browser-example)
 ## Developing with the Electron example
 
 Start watching all packages, including `electron-app`, of your application with
 
-    npm run watch:electron
+```sh
+  npm run watch:electron
+```
 
 *or* watch only specific packages with
 
-    cd widget
-    npm run watch
+```sh
+  cd syphor
+  npm run watch
+```
 
-and the Electron example.
+and the Electron example:
 
-    cd electron-app
-    npm run watch
+```sh
+  cd electron-app
+  npm run watch
+```
 
-Run the example as [described above](#Running-the-Electron-example)
-
-## Publishing widget
+## Publishing an extension
 
 Create a npm user and login to the npm registry, [more on npm publishing](https://docs.npmjs.com/getting-started/publishing-npm-packages).
 
-    npm login
+```sh
+  npm login
+```
 
 Publish packages with lerna to update versions properly across local packages, [more on publishing with lerna](https://github.com/lerna/lerna#publish).
 
-    npx lerna publish
+```sh
+  npx lerna publish
+```
