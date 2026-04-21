@@ -1,8 +1,8 @@
 # Cypher Queries
 
-**Date:** 2026-04-21
-**Scope:** Early-stage electronics Zettelkasten / graph-native knowledgebase
-**Focus entity example:** 1N4148 small-signal diode
+- *Date* 2026-04-21
+- *Scope* Early-stage electronics Zettelkasten / graph-native knowledgebase
+- *Focus entity example* 1N4148 small-signal diode
 
 # Current Graph Contents
 
