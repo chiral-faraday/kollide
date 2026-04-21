@@ -1,5 +1,27 @@
-# README
-Custom IDE built on Theia. 
+# Kollide
+
+<p align="center">
+  Custom IDE built on Eclipse Theia with a Memgraph-powered backend.
+</p>
+
+---
+
+<p align="center">
+  <a href="https://theia-ide.org/">
+    <img src="https://img.shields.io/badge/Built%20with-Eclipse%20Theia-0052CC?logo=eclipseide&logoColor=white" alt="Theia" />
+  </a>
+  <a href="https://memgraph.com/">
+    <img src="https://img.shields.io/badge/Database-Memgraph-00C2A8?logo=memgraph&logoColor=white" alt="Memgraph" />
+  </a>
+  <a href="https://nodejs.org/">
+    <img src="https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white" alt="Node.js" />
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
+  </a>
+</p>
+
+---
 
 ## Status 
 The project is currently work in progress. 
@@ -118,3 +140,7 @@ Publish packages with lerna to update versions properly across local packages, [
 ```sh
   npx lerna publish
 ```
+
+---
+
+- https://img.shields.io/badge/kollide-theia-blue
