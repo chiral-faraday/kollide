@@ -45,6 +45,7 @@ npm run start:browser
 ```
 
 *Access the application*
+
 Navigate to: `localhost:3000`
 
 ## Running the tests
